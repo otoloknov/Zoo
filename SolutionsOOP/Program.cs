@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Animals.Fish;
-using Animals.Mammal;
-using Animals.Reptile;
 
 namespace SolutionsOOP
 {
@@ -13,9 +6,9 @@ namespace SolutionsOOP
     {
         static void Main(string[] args)
         {
-            var smallShark = new Shark("SmallShark #1",100);
-            var smallTiger = new Tiger("SmallTiger #1",560);
-            var smallFrog = new Frog("SmallFrog #1", 45);
+            var smallShark = new Animals.Fish.Shark("SmallShark #1",100);
+            var smallTiger = new Animals.Mammal.Tiger("SmallTiger #1",560);
+            var smallFrog = new Animals.Reptile.Frog("SmallFrog #1", 45);
 
             smallFrog.Crawl();
             smallFrog.Talk();
