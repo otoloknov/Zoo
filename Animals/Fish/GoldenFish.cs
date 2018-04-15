@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Animals.Interfaces;
 
 namespace Animals.Fish
 {
-    class GoldenFish : Fish
+    public class GoldenFish : Fish, IWaterLover
     {
         public GoldenFish(string name, int depth)
         {
@@ -21,6 +18,11 @@ namespace Animals.Fish
         public override void Swimming()
         {
             Console.WriteLine("IM SWIMMING = Im a {0}. My name is {1}, I could download on {2}", typeof(GoldenFish), Name, DepthOfDiving);
+        }
+
+        public void CanDive()
+        {
+            Console.WriteLine("I will diving now. Max depth = {0}", DepthOfDiving);
         }
     }
 }

@@ -45,19 +45,25 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XmlFileParser.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Animals\Animals.csproj">
+    <ProjectReference Include="..\Animals\AnimalLiblary.csproj">
       <Project>{96f448e5-aaf9-4a97-a74b-3031acabaace}</Project>
-      <Name>Animals</Name>
+      <Name>AnimalLiblary</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Zoo\Zoo.csproj">
+    <ProjectReference Include="..\Zoo\ZooLibrary.csproj">
       <Project>{e0718e42-710f-40c2-9ff6-09edc740cabd}</Project>
-      <Name>Zoo</Name>
+      <Name>ZooLibrary</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ListOfAnimals.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

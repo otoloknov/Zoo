@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{96F448E5-AAF9-4A97-A74B-3031ACABAACE}</ProjectGuid>
+    <ProjectGuid>{E0718E42-710F-40C2-9FF6-09EDC740CABD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Animals</RootNamespace>
-    <AssemblyName>Animals</AssemblyName>
+    <RootNamespace>ZooLibrary</RootNamespace>
+    <AssemblyName>ZooLibrary</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,19 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Animal.cs" />
-    <Compile Include="Fish\Fish.cs" />
-    <Compile Include="Fish\GoldenFish.cs" />
-    <Compile Include="Fish\Shark.cs" />
-    <Compile Include="Mammal\Horse.cs" />
-    <Compile Include="Mammal\Lion.cs" />
-    <Compile Include="Mammal\Mammal.cs" />
-    <Compile Include="Mammal\Tiger.cs" />
+    <Compile Include="Zoo.cs" />
+    <Compile Include="ZooManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Reptile\Crocodile.cs" />
-    <Compile Include="Reptile\Frog.cs" />
-    <Compile Include="Reptile\Lizard.cs" />
-    <Compile Include="Reptile\Reptile.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Animals\AnimalLiblary.csproj">
+      <Project>{96F448E5-AAF9-4A97-A74B-3031ACABAACE}</Project>
+      <Name>AnimalLiblary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

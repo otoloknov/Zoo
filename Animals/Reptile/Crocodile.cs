@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Animals.Interfaces;
 
 namespace Animals.Reptile
 {
-    class Crocodile : Reptile
+    public class Crocodile : Reptile, IPredator
     {
         public Crocodile(string name, int lenght)
         {
@@ -22,6 +19,11 @@ namespace Animals.Reptile
         public override void Crawl()
         {
             Console.WriteLine("IM CRAWILNG = Im a {0}. My name is {1}, I could download on {2}", typeof(Crocodile), Name, Lenght);
+        }
+
+        public void CanEatNotPredators()
+        {
+            Console.WriteLine("I can eat non Predators. just Hide.");
         }
     }
 }

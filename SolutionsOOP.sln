@@ -5,9 +5,14 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolutionsOOP", "SolutionsOOP\SolutionsOOP.csproj", "{A6407AAF-61B7-47BA-A7A9-B3BFC5A5586B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zoo", "Zoo\Zoo.csproj", "{E0718E42-710F-40C2-9FF6-09EDC740CABD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZooLibrary", "Zoo\ZooLibrary.csproj", "{E0718E42-710F-40C2-9FF6-09EDC740CABD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animals", "Animals\Animals.csproj", "{96F448E5-AAF9-4A97-A74B-3031ACABAACE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalLiblary", "Animals\AnimalLiblary.csproj", "{96F448E5-AAF9-4A97-A74B-3031ACABAACE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2C9B3F7D-AEB0-4A1E-9B15-0ECBAE4820D9}"
+	ProjectSection(SolutionItems) = preProject
+		ZooStartList.xml = ZooStartList.xml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

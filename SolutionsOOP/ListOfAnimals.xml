@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <AnimalToSort type ="GoldenFish">
+    <Name>Fish #2</Name>
+    <AdditionalParmeter>10</AdditionalParmeter>
+  </AnimalToSort>
+
+  <AnimalToSort type ="Shark">
+    <Name>Shark #2</Name>
+    <AdditionalParmeter>100</AdditionalParmeter>
+  </AnimalToSort>
+
+</root>

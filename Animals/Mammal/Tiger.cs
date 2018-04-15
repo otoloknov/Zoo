@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Animals.Interfaces;
 
 namespace Animals.Mammal
 {
-    public class Tiger : Mammal
+    public class Tiger : Mammal , IPredator
     {
         public Tiger(string name, int age)
         {
@@ -21,6 +18,10 @@ namespace Animals.Mammal
         public override void Walk()
         {
             Console.WriteLine("IM WALKING = Im a {0}. My name is {1}, I could download on {2}", typeof(Tiger), Name, AgeDays);
+        }
+        public void CanEatNotPredators()
+        {
+            Console.WriteLine("I can eat non Predators. just Hide.");
         }
     }
 }
