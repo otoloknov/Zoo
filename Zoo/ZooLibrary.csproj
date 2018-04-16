@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CageTemplate.cs" />
     <Compile Include="Zoo.cs" />
     <Compile Include="ZooManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

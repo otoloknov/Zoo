@@ -10,4 +10,9 @@
     <AdditionalParmeter>100</AdditionalParmeter>
   </AnimalToSort>
 
+  <AnimalToSort type ="Frog">
+    <Name>Frog #2</Name>
+    <AdditionalParmeter>15</AdditionalParmeter>
+  </AnimalToSort>
+
 </root>

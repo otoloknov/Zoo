@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics.Eventing.Reader;
 using Animals;
+using Animals.Reptile;
 
 
 namespace ZooLibrary
@@ -36,6 +37,8 @@ namespace ZooLibrary
                     else if (AnimalClassifier.IsAnimalaCat(identifyAnimal))
                             currentZoo.PutAnAnimalInNonPredatorsCage(identifyAnimal);
                         else currentZoo.PutAnAnimalInNonPredatorsCage(identifyAnimal);
+
+                if(identifyAnimal.Name.Contains("Frog")) currentZoo.PutFrogToTheCage((Frog)identifyAnimal);
             }
         }
     }

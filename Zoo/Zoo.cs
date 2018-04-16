@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Animals;
+using Animals.Reptile;
 
 namespace ZooLibrary
 {
@@ -17,6 +18,8 @@ namespace ZooLibrary
             ZooState = state;
         }
 
+        private readonly CageTemplate<Frog> _onlyFrogList = new CageTemplate<Frog>();
+
         private readonly List<Animal> _cagesForNonPredators = new List<Animal>();
         private readonly List<Animal> _cagesForPredators = new List<Animal>();
         private readonly List<Animal> _cagesWithWatter = new List<Animal>();
@@ -32,6 +35,11 @@ namespace ZooLibrary
         public void PutAnAnimalInWater(Animal animal)
         {
             _cagesWithWatter.Add(animal);
+        }
+
+        public void PutFrogToTheCage(Frog frog)
+        {
+            _onlyFrogList.AddToCage(frog);
         }
 
         public void PrintListOfAnimalInCages()
@@ -59,6 +67,7 @@ namespace ZooLibrary
                 Console.Write(waterAnimal.Name + " , ");
             }
             Console.WriteLine("\n----------------------------------");
+            _onlyFrogList.PrintAll();
             Console.ResetColor();
         }
 
